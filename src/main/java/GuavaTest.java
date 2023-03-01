@@ -7,8 +7,8 @@ public class GuavaTest
 {
     public static void main(String[] args)
     {
-        String output = Strings.padEnd("cat", 10, '*');
-        System.out.println(output);
+//        String output = Strings.padEnd("cat", 10, '*');
+//        System.out.println(output);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +19,11 @@ public class GuavaTest
 
         if(!StringUtils.isNumeric(userInput))
         {
-            System.out.printf("\"%s\" is not a number%n", userInput);
+            System.out.printf("\"%s\" is NOT a number%n", userInput);
+        }
+        else
+        {
+            System.out.printf("\"%s\" is a number%n", userInput);
         }
 
         System.out.printf("Flipped case: %s%n", StringUtils.swapCase(userInput));
