@@ -17,6 +17,8 @@ public class GuavaTest
 
         System.out.printf("You entered: \"%s\"%n", userInput);
 
+
+
         if(!StringUtils.isNumeric(userInput))
         {
             System.out.printf("\"%s\" is NOT a number%n", userInput);
